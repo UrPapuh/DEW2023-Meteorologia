@@ -1,0 +1,19 @@
+{
+  "name": "dew2023-meteorologia",
+  "version": "1.0.0",
+  "description": "APP de meteorologia con API Rest.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UrPapuh/DEW2023-Meteorologia.git"
+  },
+  "author": "Andrew Garcia Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UrPapuh/DEW2023-Meteorologia/issues"
+  },
+  "homepage": "https://github.com/UrPapuh/DEW2023-Meteorologia#readme"
+}
