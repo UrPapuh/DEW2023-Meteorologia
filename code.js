@@ -33,8 +33,8 @@ fetch('https://www.el-tiempo.net/api/json/v2/home')
 
   provinces.addEventListener('change', (event) => {
     municipalities.innerHTML = '<option disabled selected>- Elige un municipio -</option>'; // Clean municipalities
-    
-    provName = provinces.querySelector('option:checked').textContent;
+    // provName = provinces.querySelector('option:checked').textContent;
+    provName = provinces.options[provinces.selectedIndex].textContent;
     title.textContent = `El tiempo en la provincia de ${provName}`;
 
     provCod = event.target.value;
@@ -60,7 +60,8 @@ fetch('https://www.el-tiempo.net/api/json/v2/home')
 
   // -> Municipalities
   municipalities.addEventListener('change', (event) => {
-    munName = municipalities.querySelector('option:checked').textContent;
+    // munName = municipalities.querySelector('option:checked').textContent;
+    munName = municipalities.options[municipalities.selectedIndex].textContent;
     title.textContent = `El tiempo en ${provName} - ${munName}`;
 
     munCod = event.target.value;
